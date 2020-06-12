@@ -1,13 +1,13 @@
 <h1>Burgers!</h1>
 
-<h2>Burgers that are not DEVORED!</h2>
+<h2>Burgers that are not DEVOURED!</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
   <li>
     {{burger_name}}
-    <button type="button" id="chng-Devour" class="btn btn-secondary btn-lg" value={{id}}>
+    <button type="button" id="change-Devour" class="btn btn-secondary btn-lg" value={{id}}>
       {{#unless sleep}}Devour IT!{{/unless}}
     </button>
   </li>
@@ -22,9 +22,6 @@
   {{#if devoured}}
   <li>
     {{burger_name}}
-    <button type="button" id="change-Devour" class="btn btn-secondary btn-lg" value={{id}}>
-      {{#unless sleep}}Devour IT!{{/unless}}
-    </button>
   </li>
   {{/if}}
   {{/each}}
